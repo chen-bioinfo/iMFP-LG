@@ -2,9 +2,10 @@
 📋Identifying multi-functional peptides using protein language model and graph attention network
 
 ## 📘 Abstract
-In this study, we provide a multi-label framework using protein language model and graph attention network for identifying multi-functional peptides. Pre-trained protein language model is used to extract fine-grained features of different functional peptides from peptide sequences. We transformed the multi-label problem to graph node classification and the graph attention network is used to learn the relationship between different labels. We conducted a series of experiments on two datasets of multi-functional bioactive peptides(MFBP) and multi-functional therapeutics peptides(MFTP) to validate our framework. The result demonstrates our model greatly outperforms other methods and we believe it can be effectively expanded to other multi-label studies in bioinformatics.
+&nbsp;&nbsp;&nbsp;&nbsp; In this study, we provide a multi-label framework using protein language model and graph attention network for identifying multi-functional peptides. Pre-trained protein language model is used to extract fine-grained features of different functional peptides from peptide sequences. We transformed the multi-label problem to graph node classification and the graph attention network is used to learn the relationship between different labels. We conducted a series of experiments on two datasets of multi-functional bioactive peptides(MFBP) and multi-functional therapeutics peptides(MFTP) to validate our framework. The result demonstrates our model greatly outperforms other methods and we believe it can be effectively expanded to other multi-label studies in bioinformatics.
 
 ## 🧬 Model Structure
+&nbsp;&nbsp;&nbsp;&nbsp; iMFP-LG consists of two modules: peptide representation module and a graph classification module. The peptide sequences are first fed into the pLM to extract high-quality representations, which are then transformed as node features by node feature encoders. The GAT is performed to fine-tune node features by learning the relationship of nodes. Finally, the updated node features are utilized to determine whether the peptides have corresponding function or not through node classifiers. 
 <div align=center><img src=img/framework.png></div>
 
 ## 🚀 Train
@@ -14,7 +15,7 @@ conda activate imfp-lg
 
 # the key elements of 'iMFP-LG' operating environment are listed below:
 transformers==4.24.0
-torch==1.12.0+cu113 (You can download it from the [pytorch](https://pytorch.org/get-started/previous-versions) )
+torch==1.12.0+cu113 (You can download it from the pytorch(https://pytorch.org/get-started/previous-versions) )
 scikit-learn
 
 # Clone this repository
