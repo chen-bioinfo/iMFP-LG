@@ -1,5 +1,5 @@
 # iMFP-BG
-📋Identifying multi-functional peptides using protein language model and graph attention network
+📋Discovery of novel multi-functional peptides by using protein language models and graph-based deep learning
 
 ## 📘 Abstract
 &nbsp;&nbsp;&nbsp;&nbsp; In this study, we provide a multi-label framework using protein language model and graph attention network for identifying multi-functional peptides. Pre-trained protein language model is used to extract fine-grained features of different functional peptides from peptide sequences. We transformed the multi-label problem to graph node classification and the graph attention network is used to learn the relationship between different labels. We conducted a series of experiments on two datasets of multi-functional bioactive peptides(MFBP) and multi-functional therapeutics peptides(MFTP) to validate our framework. The result demonstrates our model greatly outperforms other methods and we believe it can be effectively expanded to other multi-label studies in bioinformatics.
