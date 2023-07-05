@@ -8,9 +8,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp; iMFP-LG consists of two modules: peptide representation module and a graph classification module. The peptide sequences are first fed into the pLM to extract high-quality representations, which are then transformed as node features by node feature encoders. The GAT is performed to fine-tune node features by learning the relationship of nodes. Finally, the updated node features are utilized to determine whether the peptides have corresponding function or not through node classifiers. 
 <div align=center><img src=img/framework.png></div>
 
-## 💻 Model Structure
-The web server is available at: http://bioinformatics.hitsz.edu.cn/iMFP-LG/
-
 ## 🚀 Train
 ```
 # Creating a virtual environment
